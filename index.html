@@ -431,6 +431,43 @@
         <audio src="https://gamepedia.cursecdn.com/minecraft_gamepedia/f/fb/Cave18.ogg"  id="creep2" loop></audio>
         <audio   src="https://www.fesliyanstudios.com/play-mp3/2464" id="foot"></audio>
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script type="text/javascript">
+            let text="It's 2077 and the world's technology seems to have have peaked...flying cars, artificial intelligent devices and robots,nuclear fusion plants, bioweapons are now things we see everyday...but all this is about to change,...after dr. Stoick's experiment went haywire as he intended to grow a cell which will help kill cancerous cells and cure cancer permanently but instead he succeeded in making the 'I-virus'...the virus turns those who are host into what we term as the 'infected'.The infected have wiped out many including your wife and children and the virus is still spreading like a wild fire...You have to stop the spread before it's too late...."
+            var Back = document.getElementById("tex");
+            var Back = document.getElementById("te");
+            
+                 var z= 0;
+                 
+            var inter=setInterval(MOVE, 45);
+            
+            function MOVE() {
+                if (z < text.length) {
+                    te.innerHTML += text[z];
+                    z++;
+                }
+            }
+            var b=0
+            function ad(){
+            if(b===1){
+            tex.classList.add("ad")
+            }
+            else{
+            clearInterval(inter)
+            te.innerHtml=""
+            te.innerHTML=text
+            }
+            b++
+            }
+            
+            creep.volume=0.6
+            creep2.volume=0.6
+            function g(){
+            if(document.getElementById("o").checked){
+            on()
+            }else{
+            off()
+            }
+            }
 
 
     </style>
