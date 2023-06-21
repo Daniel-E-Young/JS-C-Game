@@ -517,8 +517,22 @@
                     po.style.display="none"
                 },2000)
                 }else if(document.getElementById("no").checked){
-                    po.innerHTML
-                }
+                    po.innerHTML="<b style='color:red;'>Boss:</b>Well agent <i style='color:purple;'>"+name+" </i>...you might as well fight to survive cause you're stuck here(laughs)...By the way you're <i>HIRED!!</i>"
+                    setTimeout(function(){
+                    po.style.display="none"
+                    },2500)
+                    }
+                    }
+                    function next(){
+                    animate()
+                    wave++
+                    kills==0
+                    document.getElementById("blur").style.display="none"
+                    }
+                    function retry(){
+                    location.reload()
+                    }
+
             
 
             }
