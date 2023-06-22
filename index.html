@@ -533,17 +533,17 @@
                     location.reload()
                     }
                     setInterval(function(){
-score.innerHTML="Kills:"+kills+"/"+target
-document.getElementById("action").innerHTML=acti
-power.innerHTML=pow
-life.value=lif
-if(kills===target){
-document.getElementById("next").style.display="block"
-document.getElementById("blur").style.display="flex"
-document.getElementById("p").innerHTML="Congratulations agent <i style='color:purple;'>"+name+"</i> you managed to wipe em all..at least for now..., Let's proceed to the next wave, Be careful it only gets worse from here"
-document.getElementById("next").innerHTML="Wave "+ wave
-target=wave*20
-}
+                    score.innerHTML="Kills:"+kills+"/"+target
+                    document.getElementById("action").innerHTML=acti
+                    power.innerHTML=pow
+                    life.value=lif
+                    if(kills===target){
+                    document.getElementById("next").style.display="block"
+                    document.getElementById("blur").style.display="flex"
+                    document.getElementById("p").innerHTML="Congratulations agent <i style='color:purple;'>"+name+"</i> you managed to wipe em all..at least for now..., Let's proceed to the next wave, Be careful it only gets worse from here"
+                    document.getElementById("next").innerHTML="Wave "+ wave
+                    target=wave*20
+                    }
 
             }
 
