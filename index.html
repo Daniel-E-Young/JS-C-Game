@@ -706,7 +706,18 @@
             functiondraw4(){
                 ctx.beginPath()
                 ctx.fillStyle="White"
-                
+                ctx.arc(zomb.x2,zomb.y2,zomb.size2,0,Math.PI*2,false)
+                ctx.fill()
+                ctx.beginPath()
+                ctx.fillStyle="White"
+                ctx.strokeStyle="black"
+                ctx.arc(zomb.eyx2,zomb.eyy2,zomb.eysize2,0,Math.PI*2,false)
+                ctx.fill()
+                ctx.stroke()
+                ctx.beginPath()
+                ctx.fillStyle="#267aaa"
+                ctx.arc(zomb.irx2,zomb.iry2,zomb.irsize2,0,Math.PI*2,false)
+                ctx.fill()
             }
 
 
